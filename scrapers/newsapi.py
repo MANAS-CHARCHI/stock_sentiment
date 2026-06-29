@@ -17,7 +17,7 @@ articles = response.json()["articles"]
 
 for article in articles:
     print(article["title"])
-    print(article["description"])     # clean summary
+    print(article["description"])
     print(article["publishedAt"])
     print(article["source"]["name"])
     print("---")

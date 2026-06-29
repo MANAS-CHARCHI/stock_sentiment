@@ -1,0 +1,9 @@
+1.  get nse socks all day, update stock with previous stock , 
+    store 2 csv of nse, last day and today, chekc if there is any change then update what changed, 
+    else ignore and remove yesterday csv, and next day one another csv will come
+
+2.  Do automation for stock update
+
+3.  update stock price all day, update news data all day, schadule, update yf all data
+
+4.  start sentimental analytics and all

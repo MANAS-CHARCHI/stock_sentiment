@@ -38,3 +38,15 @@ class NewsArticle(Base):
     created_at     = Column(DateTime, server_default=func.now())
 
     stock = relationship("WatchedStock", back_populates="news_articles")
+
+class YFSummary(Base):
+    __tablename__ = "yf_summaries"
+
+    id             = Column(Integer, primary_key=True)
+    stock_id       = Column(Integer, ForeignKey("watched_stocks.id"), nullable=False)
+    title          = Column(Text)
+    summary        = Column(Text)
+    pub_date       = Column(Date, nullable=False)
+    created_at     = Column(DateTime, server_default=func.now())
+
+    stock = relationship("WatchedStock", back_populates="yf_summaries")
