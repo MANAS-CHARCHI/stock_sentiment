@@ -9,7 +9,7 @@ class AllNSEStocks(Base):
 
     id = Column(Integer, primary_key=True)
     name = Column(String(150), nullable=False)
-    symbol = Column(String(20), nullable=False)
+    symbol = Column(String(20), nullable=False, unique=True)
     date_of_listing= Column(DateTime, nullable=False)
     isin_number= Column(String(20), nullable=False)
     face_value= Column(Integer, nullable=False)
