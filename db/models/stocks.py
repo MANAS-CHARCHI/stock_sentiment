@@ -11,7 +11,7 @@ class AllNSEStocks(Base):
     name = Column(String(150), nullable=False)
     symbol = Column(String(20), nullable=False, unique=True)
     date_of_listing= Column(DateTime, nullable=False)
-    isin_number= Column(String(20), nullable=False)
+    isin_number= Column(String(20), nullable=False, unique=True)
     face_value= Column(Integer, nullable=False)
 
     watched_by = relationship("WatchedStock", back_populates="master_stock")
@@ -22,7 +22,7 @@ class WatchedStock(Base):
     __tablename__ = "watched_stocks"
     
     id          = Column(Integer, primary_key=True)
-    master_stock_id = Column(Integer, ForeignKey("all_nse_stocks.id"), nullable=True)
+    master_stock_isin = Column(String(20), ForeignKey("all_nse_stocks.isin_number"), nullable=True)
     ticker      = Column(String(20), unique=True, nullable=False)
     exchange    = Column(String(10), nullable=False)
     name        = Column(String(100), nullable=False)
@@ -33,7 +33,7 @@ class WatchedStock(Base):
     added_at    = Column(DateTime, server_default=func.now())
     active      = Column(Boolean, nullable=False, default=True)
     
-    master_stock      = relationship("AllNSEStocks", back_populates="watched_by")
+    master_stock      = relationship("AllNSEStocks", back_populates="watched_by", foreign_keys=[master_stock_isin])
     reddit_posts      = relationship("RedditPost", back_populates="stock")
     news_articles     = relationship("NewsArticle", back_populates="stock")
     agent_results     = relationship("AgentResult", back_populates="stock")

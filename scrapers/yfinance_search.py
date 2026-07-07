@@ -80,5 +80,5 @@ info = stock.info
 # print(stock.cashflow)         # cash flow
 
 # # Analyst recommendations
-# print(stock.recommendations)  # buy/sell/hold from analysts
+print(stock.recommendations)  # buy/sell/hold from analysts
 print(stock.analyst_price_targets)  # price targets

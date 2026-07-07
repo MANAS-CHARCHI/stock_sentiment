@@ -2,6 +2,7 @@ alembic revision --autogenerate -m "initial tables"
 
 alembic upgrade head
 
+uvicorn main:main --relaod
 
 finnhub: https://finnhub.io/api/v1/company-news?symbol=GOOGL&from=2026-06-01&to=2026-06-29 -> for us stocks
 

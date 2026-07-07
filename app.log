@@ -1,0 +1,543 @@
+INFO:     Started server process [24446]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [24446]
+{'total_in_csv': 2374, 'deleted': 0}
+>>> start_scheduler() called
+>>> Jobs registered: ['nse_stock_sync']
+>>> Jobs registered: [('nse_stock_sync', datetime.datetime(2026, 7, 1, 23, 51, tzinfo=zoneinfo.ZoneInfo(key='Asia/Kolkata')))]
+2026-07-01 00:13:54,843 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-01 00:13:54,843 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-01 00:13:54,844 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-01 00:13:54,844 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-01 00:13:54,844 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-01 00:14:00,006 - apscheduler.executors.default - INFO - Running job "run_nse_stock_sync (trigger: cron[hour='0', minute='14'], next run at: 2026-07-01 00:14:00 IST)" (scheduled at 2026-07-01 00:14:00+05:30)
+2026-07-01 00:14:00,007 - nse_stock_update - INFO - Starting NSE stock sync job
+2026-07-01 00:14:00,382 - nse_stock_update - INFO - Downloaded today's NSE file 2026_07_01.csv to /Users/manascharchi/Documents/Manas-Dev/stock_sentiment/stock_data/2026_07_01.csv
+2026-07-01 00:14:00,383 - nse_stock_update - INFO - Got the Latest NSE File
+2026-07-01 00:14:00,432 - nse_stock_update - INFO - Read 2374 records from /Users/manascharchi/Documents/Manas-Dev/stock_sentiment/stock_data/2026_07_01.csv & prepared them to update the DB
+2026-07-01 00:14:00,432 - nse_stock_update - INFO - Prepared the record to update if any
+2026-07-01 00:14:00,863 - nse_stock_update - INFO - Upserted 2374 records & deleted 0 records
+2026-07-01 00:14:00,863 - nse_stock_update - INFO - Synced 2374 records
+2026-07-01 00:14:00,863 - nse_stock_update - INFO - NSE stock sync finished
+2026-07-01 00:14:00,863 - nse_stock_update - INFO - Removed temporary file: /Users/manascharchi/Documents/Manas-Dev/stock_sentiment/stock_data/2026_07_01.csv
+2026-07-01 00:14:00,863 - apscheduler.executors.default - INFO - Job "run_nse_stock_sync (trigger: cron[hour='0', minute='14'], next run at: 2026-07-02 00:14:00 IST)" executed successfully
+2026-07-01 00:16:09,554 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-01 00:39:12,874 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-01 00:39:12,874 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-01 00:39:12,874 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-01 00:39:12,874 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-01 00:39:12,874 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-01 00:40:17,080 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-01 00:40:19,189 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-01 00:40:19,189 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-01 00:40:19,189 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-01 00:40:19,190 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-01 00:40:19,190 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-01 00:41:00,002 - apscheduler.executors.default - INFO - Running job "run_nse_stock_sync (trigger: cron[hour='0', minute='41'], next run at: 2026-07-01 00:41:00 IST)" (scheduled at 2026-07-01 00:41:00+05:30)
+2026-07-01 00:41:00,006 - nse_stock_update - INFO - Starting NSE stock sync job
+2026-07-01 00:41:00,386 - nse_stock_update - INFO - Downloaded today's NSE file 2026_07_01.csv to /Users/manascharchi/Documents/Manas-Dev/stock_sentiment/stock_data/2026_07_01.csv
+2026-07-01 00:41:00,388 - nse_stock_update - INFO - Got the Latest NSE File
+2026-07-01 00:41:00,443 - nse_stock_update - INFO - Read 2374 records from /Users/manascharchi/Documents/Manas-Dev/stock_sentiment/stock_data/2026_07_01.csv & prepared them to update the DB
+2026-07-01 00:41:00,443 - nse_stock_update - INFO - Prepared the record to update if any
+2026-07-01 00:41:00,822 - nse_stock_update - INFO - Upserted 2374 records & deleted 0 records
+2026-07-01 00:41:00,822 - nse_stock_update - INFO - Synced 2374 records
+2026-07-01 00:41:00,822 - nse_stock_update - INFO - NSE stock sync finished
+2026-07-01 00:41:00,823 - nse_stock_update - INFO - Removed temporary file: /Users/manascharchi/Documents/Manas-Dev/stock_sentiment/stock_data/2026_07_01.csv
+2026-07-01 00:41:00,823 - apscheduler.executors.default - INFO - Job "run_nse_stock_sync (trigger: cron[hour='0', minute='41'], next run at: 2026-07-02 00:41:00 IST)" executed successfully
+2026-07-01 00:41:21,318 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-03 23:47:28,476 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-03 23:47:28,477 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-03 23:47:28,477 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-03 23:47:28,477 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-03 23:47:28,477 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-03 23:48:00,005 - apscheduler.executors.default - INFO - Running job "run_nse_stock_sync (trigger: cron[hour='23', minute='48'], next run at: 2026-07-03 23:48:00 IST)" (scheduled at 2026-07-03 23:48:00+05:30)
+2026-07-03 23:48:00,006 - nse_stock_update - INFO - Starting NSE stock sync job
+2026-07-03 23:48:00,443 - nse_stock_update - INFO - Downloaded today's NSE file 2026_07_03.csv to /Users/manascharchi/Documents/Manas-Dev/stock_sentiment/stock_data/2026_07_03.csv
+2026-07-03 23:48:00,444 - nse_stock_update - INFO - Got the Latest NSE File
+2026-07-03 23:48:00,647 - nse_stock_update - INFO - Read 2381 records from /Users/manascharchi/Documents/Manas-Dev/stock_sentiment/stock_data/2026_07_03.csv & prepared them to update the DB
+2026-07-03 23:48:00,647 - nse_stock_update - INFO - Prepared the record to update if any
+2026-07-03 23:48:00,988 - nse_stock_update - INFO - Upserted 2381 records & deleted 0 records
+2026-07-03 23:48:00,988 - nse_stock_update - INFO - Synced 2381 records
+2026-07-03 23:48:00,988 - nse_stock_update - INFO - NSE stock sync finished
+2026-07-03 23:48:00,988 - nse_stock_update - INFO - Removed temporary file: /Users/manascharchi/Documents/Manas-Dev/stock_sentiment/stock_data/2026_07_03.csv
+2026-07-03 23:48:00,988 - apscheduler.executors.default - INFO - Job "run_nse_stock_sync (trigger: cron[hour='23', minute='48'], next run at: 2026-07-04 23:48:00 IST)" executed successfully
+2026-07-03 23:50:09,842 - yfinance - ERROR - HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: 1725.NS"}}}
+2026-07-03 23:50:13,460 - yfinance - ERROR - $1725.NS: possibly delisted; no price data found  (period=1mo) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-03 23:53:18,965 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-03 23:53:20,499 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-03 23:53:20,499 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-03 23:53:20,500 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-03 23:53:20,500 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-03 23:53:20,500 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-03 23:53:25,459 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-03 23:53:26,638 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-03 23:53:26,638 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-03 23:53:26,638 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-03 23:53:26,638 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-03 23:53:26,638 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-03 23:53:40,027 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-03 23:53:41,569 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-03 23:53:41,569 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-03 23:53:41,569 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-03 23:53:41,569 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-03 23:53:41,569 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-03 23:53:41,772 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-03 23:53:42,716 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-03 23:53:42,716 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-03 23:53:42,716 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-03 23:53:42,716 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-03 23:53:42,716 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-03 23:53:53,889 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-03 23:53:55,309 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-03 23:53:55,309 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-03 23:53:55,309 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-03 23:53:55,309 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-03 23:53:55,309 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-03 23:55:52,790 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-03 23:55:54,258 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-03 23:55:54,258 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-03 23:55:54,259 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-03 23:55:54,259 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-03 23:55:54,260 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-03 23:56:59,540 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-03 23:57:01,001 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-03 23:57:01,001 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-03 23:57:01,002 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-03 23:57:01,002 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-03 23:57:01,002 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-03 23:57:27,947 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-03 23:57:29,175 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-03 23:57:29,175 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-03 23:57:29,175 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-03 23:57:29,175 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-03 23:57:29,175 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-03 23:57:56,092 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-03 23:57:57,425 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-03 23:57:57,425 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-03 23:57:57,425 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-03 23:57:57,425 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-03 23:57:57,425 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-03 23:58:25,454 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-03 23:58:26,850 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-03 23:58:26,850 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-03 23:58:26,851 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-03 23:58:26,851 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-03 23:58:26,851 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-03 23:58:38,492 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-03 23:58:39,719 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-03 23:58:39,719 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-03 23:58:39,719 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-03 23:58:39,719 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-03 23:58:39,719 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-03 23:58:46,490 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-03 23:58:47,929 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-03 23:58:47,929 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-03 23:58:47,931 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-03 23:58:47,931 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-03 23:58:47,931 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:01:11,206 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:01:12,945 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:01:12,945 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:01:12,946 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:01:12,946 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:01:12,946 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:01:29,038 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:01:30,621 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:01:30,621 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:01:30,621 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:01:30,621 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:01:30,621 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:02:41,121 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:02:42,797 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:02:42,797 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:02:42,798 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:02:42,798 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:02:42,798 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:02:57,786 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:02:59,499 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:02:59,499 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:02:59,499 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:02:59,499 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:02:59,499 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:03:15,349 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:03:16,569 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:03:16,569 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:03:16,569 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:03:16,569 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:03:16,570 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:04:28,080 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:04:29,546 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:04:29,546 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:04:29,547 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:04:29,547 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:04:29,547 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:04:52,110 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:04:53,230 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:04:53,230 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:04:53,231 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:04:53,231 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:04:53,231 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:05:00,440 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:05:02,579 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:05:02,579 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:05:02,580 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:05:02,580 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:05:02,580 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:06:08,910 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:06:10,545 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:06:10,545 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:06:10,546 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:06:10,546 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:06:10,546 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:06:18,029 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:06:19,588 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:06:19,589 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:06:19,590 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:06:19,590 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:06:19,590 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:06:29,403 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:06:31,149 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:06:31,149 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:06:31,149 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:06:31,149 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:06:31,149 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:09:23,962 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:09:25,511 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:09:25,511 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:09:25,511 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:09:25,511 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:09:25,511 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:09:41,012 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:09:42,809 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:09:42,810 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:09:42,810 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:09:42,810 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:09:42,811 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:09:56,620 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:09:57,685 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:09:57,685 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:09:57,685 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:09:57,685 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:09:57,685 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:11:40,593 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:11:42,352 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:11:42,353 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:11:42,354 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:11:42,354 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:11:42,354 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:12:29,970 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:12:31,233 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:12:31,233 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:12:31,234 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:12:31,234 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:12:31,234 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:13:32,208 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:13:33,813 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:13:33,814 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:13:33,814 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:13:33,814 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:13:33,815 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:13:57,977 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:13:59,054 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:13:59,055 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:13:59,055 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:13:59,055 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:13:59,055 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:14:13,941 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:14:15,139 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:14:15,139 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:14:15,139 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:14:15,139 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:14:15,139 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:15:58,721 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:16:00,600 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:16:00,600 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:16:00,600 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:16:00,600 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:16:00,600 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:21:16,632 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:21:16,633 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:21:16,633 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:21:16,633 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:21:16,634 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:24:31,940 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:24:33,295 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:24:33,295 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:24:33,295 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:24:33,295 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:24:33,295 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:24:36,333 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:24:48,545 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:24:48,545 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:24:48,545 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:24:48,545 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:24:48,545 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:27:03,236 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:27:04,645 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:27:04,646 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:27:04,646 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:27:04,646 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:27:04,646 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:27:34,733 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:27:36,096 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:27:36,096 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:27:36,096 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:27:36,096 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:27:36,096 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:27:37,617 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:34:35,152 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:34:35,153 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:34:35,154 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:34:35,154 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:34:35,154 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:36:28,465 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:36:29,636 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:36:29,637 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:36:29,637 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:36:29,637 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:36:29,637 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:36:32,067 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:36:33,324 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:36:33,324 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:36:33,324 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:36:33,324 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:36:33,325 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:43:59,319 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:44:00,739 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:44:00,740 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:44:00,740 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:44:00,740 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:44:00,740 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:44:04,078 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:44:04,930 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:44:04,930 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:44:04,930 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:44:04,930 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:44:04,930 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:49:32,870 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:49:34,135 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:49:34,135 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:49:34,136 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:49:34,136 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:49:34,136 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:52:38,525 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:52:40,094 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:52:40,094 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:52:40,095 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:52:40,095 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:52:40,095 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:55:29,003 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:55:30,350 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:55:30,350 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:55:30,350 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:55:30,350 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:55:30,350 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:55:53,245 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:55:54,447 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:55:54,447 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:55:54,447 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:55:54,447 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:55:54,447 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:56:57,872 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:57:13,563 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:57:13,563 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:57:13,563 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:57:13,563 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:57:13,563 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 00:59:57,431 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 00:59:59,173 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 00:59:59,173 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 00:59:59,173 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 00:59:59,173 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 00:59:59,173 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 01:00:11,748 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 01:00:14,417 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 01:00:14,417 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 01:00:14,417 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 01:00:14,417 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 01:00:14,418 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 01:00:16,966 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 01:00:19,109 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 01:00:19,110 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 01:00:19,110 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 01:00:19,110 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 01:00:19,110 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 01:04:39,647 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 01:04:41,305 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 01:04:41,305 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 01:04:41,306 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 01:04:41,306 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 01:04:41,306 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 01:04:41,914 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 01:08:25,486 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 01:08:25,487 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 01:08:25,487 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 01:08:25,487 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 01:08:25,488 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 01:08:25,590 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 08:55:14,230 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 08:55:14,231 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 08:55:14,231 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 08:55:14,231 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 08:55:14,232 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 08:56:00,006 - apscheduler.executors.default - INFO - Running job "run_nse_stock_sync (trigger: cron[hour='8', minute='56'], next run at: 2026-07-04 08:56:00 IST)" (scheduled at 2026-07-04 08:56:00+05:30)
+2026-07-04 08:56:00,009 - nse_stock_update - INFO - Starting NSE stock sync job
+2026-07-04 08:56:01,075 - nse_stock_update - INFO - Downloaded today's NSE file 2026_07_04.csv to /Users/manascharchi/Documents/Manas-Dev/stock_sentiment/stock_data/2026_07_04.csv
+2026-07-04 08:56:01,075 - nse_stock_update - INFO - Got the Latest NSE File
+2026-07-04 08:56:01,115 - nse_stock_update - INFO - Read 2381 records from /Users/manascharchi/Documents/Manas-Dev/stock_sentiment/stock_data/2026_07_04.csv & prepared them to update the DB
+2026-07-04 08:56:01,115 - nse_stock_update - INFO - Prepared the record to update if any
+2026-07-04 08:56:01,432 - nse_stock_update - INFO - Upserted 2381 records & deleted 0 records
+2026-07-04 08:56:01,432 - nse_stock_update - INFO - Synced 2381 records
+2026-07-04 08:56:01,432 - nse_stock_update - INFO - NSE stock sync finished
+2026-07-04 08:56:01,435 - nse_stock_update - INFO - Removed temporary file: /Users/manascharchi/Documents/Manas-Dev/stock_sentiment/stock_data/2026_07_04.csv
+2026-07-04 08:56:01,435 - apscheduler.executors.default - INFO - Job "run_nse_stock_sync (trigger: cron[hour='8', minute='56'], next run at: 2026-07-05 08:56:00 IST)" executed successfully
+2026-07-04 08:57:52,841 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 08:57:54,326 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 08:57:54,327 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 08:57:54,327 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 08:57:54,327 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 08:57:54,327 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 08:57:54,632 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 08:59:53,204 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 08:59:53,207 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 08:59:53,208 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 08:59:53,208 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 08:59:53,208 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 09:00:00,001 - apscheduler.executors.default - INFO - Running job "run_nse_stock_sync (trigger: cron[hour='9', minute='0'], next run at: 2026-07-04 09:00:00 IST)" (scheduled at 2026-07-04 09:00:00+05:30)
+2026-07-04 09:00:00,002 - nse_stock_update - INFO - Starting NSE stock sync job
+2026-07-04 09:00:00,413 - nse_stock_update - INFO - Downloaded today's NSE file 2026_07_04.csv to /Users/manascharchi/Documents/Manas-Dev/stock_sentiment/stock_data/2026_07_04.csv
+2026-07-04 09:00:00,413 - nse_stock_update - INFO - Got the Latest NSE File
+2026-07-04 09:00:00,505 - nse_stock_update - INFO - Read 2381 records from /Users/manascharchi/Documents/Manas-Dev/stock_sentiment/stock_data/2026_07_04.csv & prepared them to update the DB
+2026-07-04 09:00:00,506 - nse_stock_update - INFO - Prepared the record to update if any
+2026-07-04 09:00:00,799 - nse_stock_update - INFO - Upserted 2381 records & deleted 0 records
+2026-07-04 09:00:00,800 - nse_stock_update - INFO - Synced 2381 records
+2026-07-04 09:00:00,800 - nse_stock_update - INFO - NSE stock sync finished
+2026-07-04 09:00:00,800 - nse_stock_update - INFO - Removed temporary file: /Users/manascharchi/Documents/Manas-Dev/stock_sentiment/stock_data/2026_07_04.csv
+2026-07-04 09:00:00,800 - apscheduler.executors.default - INFO - Job "run_nse_stock_sync (trigger: cron[hour='9', minute='0'], next run at: 2026-07-05 09:00:00 IST)" executed successfully
+2026-07-04 09:01:15,285 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 09:01:16,592 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 09:01:16,592 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 09:01:16,593 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 09:01:16,593 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 09:01:16,593 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 09:01:27,927 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 09:01:29,105 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 09:01:29,106 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 09:01:29,107 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 09:01:29,107 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 09:01:29,107 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 09:01:32,858 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 09:06:21,329 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 09:06:21,335 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 09:06:21,342 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 09:06:21,342 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 09:06:21,342 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 09:08:02,763 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 09:08:04,049 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 09:08:04,050 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 09:08:04,050 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 09:08:04,050 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 09:08:04,050 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 09:52:49,828 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 09:52:51,303 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 09:52:51,303 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 09:52:51,304 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 09:52:51,304 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 09:52:51,304 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 09:53:02,483 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 09:53:05,901 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 09:53:05,901 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 09:53:05,902 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 09:53:05,903 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 09:53:05,903 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 09:53:20,481 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 09:53:22,231 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 09:53:22,231 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 09:53:22,232 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 09:53:22,232 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 09:53:22,232 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 09:53:39,359 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 09:53:40,885 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 09:53:40,886 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 09:53:40,886 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 09:53:40,886 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 09:53:40,886 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 09:53:58,412 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 09:54:00,149 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 09:54:00,150 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 09:54:00,150 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 09:54:00,150 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 09:54:00,150 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 10:04:37,403 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 10:04:38,932 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 10:04:38,933 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 10:04:38,935 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 10:04:38,935 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 10:04:38,936 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 10:04:47,226 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 10:04:48,942 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 10:04:48,942 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 10:04:48,942 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 10:04:48,942 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 10:04:48,942 - scheduler - INFO - Scheduler started with 1 job(s)
+2026-07-04 10:05:18,909 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 10:05:53,161 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 10:05:53,162 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 10:05:53,162 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 10:05:53,162 - scheduler - INFO - Registered job: yf_stock_sync
+2026-07-04 10:05:53,162 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 10:05:53,162 - apscheduler.scheduler - INFO - Added job "run_yf_stock_sync" to job store "default"
+2026-07-04 10:05:53,162 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 10:05:53,162 - scheduler - INFO - Scheduler started with 2 job(s)
+2026-07-04 10:05:55,593 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 10:05:56,616 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 10:05:56,616 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 10:05:56,616 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 10:05:56,616 - scheduler - INFO - Registered job: yf_stock_sync
+2026-07-04 10:05:56,616 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 10:05:56,616 - apscheduler.scheduler - INFO - Added job "run_yf_stock_sync" to job store "default"
+2026-07-04 10:05:56,616 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 10:05:56,616 - scheduler - INFO - Scheduler started with 2 job(s)
+2026-07-04 10:08:13,017 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 10:08:14,323 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 10:08:14,323 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 10:08:14,323 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 10:08:14,323 - scheduler - INFO - Registered job: yf_stock_sync
+2026-07-04 10:08:14,325 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 10:08:14,325 - apscheduler.scheduler - INFO - Added job "run_yf_stock_sync" to job store "default"
+2026-07-04 10:08:14,325 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 10:08:14,326 - scheduler - INFO - Scheduler started with 2 job(s)
+2026-07-04 10:09:00,002 - apscheduler.executors.default - INFO - Running job "run_yf_stock_sync (trigger: cron[hour='10', minute='9'], next run at: 2026-07-04 10:09:00 IST)" (scheduled at 2026-07-04 10:09:00+05:30)
+2026-07-04 10:09:00,005 - yf_stock_update - INFO - Starting YF stock sync job
+2026-07-04 10:09:00,226 - yf_stock_update - INFO - Found 2 stocks to sync
+2026-07-04 10:09:02,818 - yf_stock_update - INFO - YF stock sync finished
+2026-07-04 10:09:02,818 - apscheduler.executors.default - INFO - Job "run_yf_stock_sync (trigger: cron[hour='10', minute='9'], next run at: 2026-07-05 10:09:00 IST)" executed successfully
+2026-07-04 10:13:32,006 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 10:13:33,631 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 10:13:33,631 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 10:13:33,631 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 10:13:33,631 - scheduler - INFO - Registered job: yf_stock_sync
+2026-07-04 10:13:33,632 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 10:13:33,632 - apscheduler.scheduler - INFO - Added job "run_yf_stock_sync" to job store "default"
+2026-07-04 10:13:33,632 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 10:13:33,632 - scheduler - INFO - Scheduler started with 2 job(s)
+2026-07-04 10:13:49,499 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-07-04 10:13:50,703 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 10:13:50,703 - scheduler - INFO - Registered job: nse_stock_sync
+2026-07-04 10:13:50,703 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-04 10:13:50,703 - scheduler - INFO - Registered job: yf_stock_sync
+2026-07-04 10:13:50,703 - apscheduler.scheduler - INFO - Added job "run_nse_stock_sync" to job store "default"
+2026-07-04 10:13:50,703 - apscheduler.scheduler - INFO - Added job "run_yf_stock_sync" to job store "default"
+2026-07-04 10:13:50,703 - apscheduler.scheduler - INFO - Scheduler started
+2026-07-04 10:13:50,703 - scheduler - INFO - Scheduler started with 2 job(s)
+2026-07-04 10:14:00,006 - apscheduler.executors.default - INFO - Running job "run_yf_stock_sync (trigger: cron[hour='10', minute='14'], next run at: 2026-07-04 10:14:00 IST)" (scheduled at 2026-07-04 10:14:00+05:30)
+2026-07-04 10:14:00,008 - yf_stock_update - INFO - Starting YF stock sync job
+2026-07-04 10:14:00,213 - yf_stock_update - INFO - Found 2 stocks to sync
+2026-07-04 10:14:02,735 - yf_stock_update - INFO - YF stock sync finished
+2026-07-04 10:14:02,739 - apscheduler.executors.default - INFO - Job "run_yf_stock_sync (trigger: cron[hour='10', minute='14'], next run at: 2026-07-05 10:14:00 IST)" executed successfully
+2026-07-04 11:17:46,374 - apscheduler.scheduler - INFO - Scheduler has been shut down

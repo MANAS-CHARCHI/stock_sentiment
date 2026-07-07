@@ -5,17 +5,11 @@ import pandas as pd
 from sqlalchemy.dialects.postgresql import insert
 from sqlalchemy.orm import Session
 from db.models import AllNSEStocks
+import logging
+
+logger = logging.getLogger("nse_stock_update")
 
 def get_new_stock_list(link: str="https://nsearchives.nseindia.com/content/equities/EQUITY_L.csv", save_dir: str = "stock_data")->None:
-    """
-    Downloads a file from NSE India and saves it to a local folder.
-    
-    Args:
-        link: Direct URL to the file (e.g. the .csv link for 
-              'Securities available for trading')
-        save_dir: Folder to save the downloaded file into
-    """
-    
     os.makedirs(save_dir, exist_ok=True)
     headers = {
         "User-Agent": (
@@ -41,14 +35,11 @@ def get_new_stock_list(link: str="https://nsearchives.nseindia.com/content/equit
     with open(filepath, "wb") as f:
         f.write(response.content)
 
+    logger.info(f"Downloaded today's NSE file {filename} to {filepath}")
+
     return filepath
 
 def prepare_stock_records(csv_path: str) -> list[dict]:
-    """
-    Reads the NSE CSV and returns a list of cleaned dicts
-    matching the AllNSEStocks model fields.
-    """
-    
     df = pd.read_csv(csv_path)
     df.columns = df.columns.str.strip()
     
@@ -64,20 +55,17 @@ def prepare_stock_records(csv_path: str) -> list[dict]:
     df["name"] = df["name"].str.strip()
     df["isin_number"] = df["isin_number"].str.strip()
     records = df[["symbol", "name", "date_of_listing", "isin_number", "face_value"]].to_dict(orient="records")
+    logger.info(f"Read {len(records)} records from {csv_path} & prepared them to update the DB")
     return records
 
 def sync_stock_record(records: list[dict], db: Session) -> dict:
-    """
-    Upserts (insert/update) all incoming records and deletes
-    any rows no longer present in the new dataset. Single transaction.
-    """
     if not records:
         return {"total_in_csv": 0, "deleted": 0}
     incoming_symbols = [r["isin_number"] for r in records]
     
     stmt = insert(AllNSEStocks).values(records)
     upsert_stmt = stmt.on_conflict_do_update(
-        index_elements=["symbol"],
+        index_elements=["isin_number"],
         set_={
             "name": stmt.excluded.name,
             "date_of_listing": stmt.excluded.date_of_listing,
@@ -88,10 +76,12 @@ def sync_stock_record(records: list[dict], db: Session) -> dict:
     
     deleted = (
         db.query(AllNSEStocks)
-        .filter(~AllNSEStocks.symbol.in_(incoming_symbols))
+        .filter(~AllNSEStocks.isin_number.in_(incoming_symbols))
         .delete(synchronize_session=False)
     )
     db.commit()
+    
+    logger.info(f"Upserted {len(records)} records & deleted {deleted} records")
 
     return {
         "total_in_csv": len(records),
