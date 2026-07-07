@@ -1,13 +1,4 @@
-from sqlalchemy import (
-    Column,
-    Integer,
-    Float,
-    String,
-    DateTime,
-    ForeignKey,
-    Date,
-    BigInteger,
-)
+from sqlalchemy import Column, Integer, Float, BigInteger, String, DateTime, ForeignKey, UniqueConstraint, Date, Text, func
 from db.database import Base
 from sqlalchemy.orm import relationship
 
@@ -78,9 +69,16 @@ class StocksAnalyticsInfo(Base):
     dividend_time = Column(DateTime)
 
     marketCap = Column(BigInteger)
-
     trailingPE = Column(Float)
     priceToBook = Column(Float)
+    high52Week = Column(Float)
+    low52Week = Column(Float)
+    fiftyDayAverage = Column(Float)
+    twoHundredDayAverage = Column(Float)
+
+    currentPrice = Column(Float)
+    mean = Column(Float)
+    median = Column(Float)
 
     fiftyDayAverage = Column(Float)
     twoHundredDayAverage = Column(Float)

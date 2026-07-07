@@ -1,7 +1,7 @@
 import yfinance as yf
 from datetime import datetime
 
-stock = yf.Ticker("PERSISTENT.NS")
+stock = yf.Ticker("RHFL.NS")
 
 # Company info
 info = stock.info
@@ -59,20 +59,20 @@ info = stock.info
 # print(history)                         # DataFrame with OHLCV
 
 # Recent news (built in)
-# news = stock.news
-# for n in news[:5]:
-#     # Extract the inner content dictionary safely
-#     content = n.get('content', {})
+news = stock.news
+for n in news[:5]:
+    # Extract the inner content dictionary safely
+    content = n.get('content', {})
     
-#     # Grab the specific fields
-#     title = content.get('title', 'No Title')
-#     summary = content.get('summary', 'No Summary')
-#     pub_date = content.get('pubDate', 'No Date')
+    # Grab the specific fields
+    title = content.get('title', 'No Title')
+    summary = content.get('summary', 'No Summary')
+    pub_date = content.get('pubDate', 'No Date')
     
-#     print(f"Date:    {pub_date}")
-#     print(f"Title:   {title}")
-#     print(f"Summary: {summary}")
-#     print("-" * 40)
+    print(f"Date:    {pub_date}")
+    print(f"Title:   {title}")
+    print(f"Summary: {summary}")
+    print("-" * 40)
 
 # Financials
 # print(stock.financials)       # income statement
@@ -80,5 +80,5 @@ info = stock.info
 # print(stock.cashflow)         # cash flow
 
 # # Analyst recommendations
-print(stock.recommendations)  # buy/sell/hold from analysts
-print(stock.analyst_price_targets)  # price targets
+# print(stock.recommendations)  # buy/sell/hold from analysts
+# print(stock.analyst_price_targets)  # price targets
