@@ -13,7 +13,7 @@ from sqlalchemy.orm import Session
 
 from db.database import get_db, SessionLocal
 from db.models import WatchedStock, AllNSEStocks
-from tasks.ingest_watched_stock import ingest_stock_from_info
+from api.helpers.ingest_watched_stock import ingest_stock_from_info
 
 router = APIRouter(prefix="/watched-stocks", tags=["watched-stocks"])
 

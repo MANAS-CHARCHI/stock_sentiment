@@ -29,7 +29,7 @@ class WatchedStock(Base):
     short_name  = Column(String(50))
     country     = Column(String(5))
     industry    = Column(String(100))
-    description = Column(Text)
+    description = Column(Text, nullable=True)
     added_at    = Column(DateTime, server_default=func.now())
     active      = Column(Boolean, nullable=False, default=True)
     

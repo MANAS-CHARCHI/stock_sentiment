@@ -41,6 +41,6 @@ def run_nse_stock_sync():
 JOB = {
     "id": "nse_stock_sync",
     "func": run_nse_stock_sync,
-    "trigger": CronTrigger(hour=11, minute=17, timezone="Asia/Kolkata"),
+    "trigger": CronTrigger(hour=10, minute=48, timezone="Asia/Kolkata"),
     "misfire_grace_time": 3600,
 }

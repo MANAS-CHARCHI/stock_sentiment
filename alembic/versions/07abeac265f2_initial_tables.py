@@ -1,8 +1,8 @@
-"""check-update-1
+"""initial tables
 
-Revision ID: c6c9a28ddbd9
+Revision ID: 07abeac265f2
 Revises: 
-Create Date: 2026-07-04 08:59:38.426507
+Create Date: 2026-07-14 10:44:30.146412
 
 """
 from typing import Sequence, Union
@@ -12,7 +12,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision: str = 'c6c9a28ddbd9'
+revision: str = '07abeac265f2'
 down_revision: Union[str, Sequence[str], None] = None
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None
@@ -35,7 +35,7 @@ def upgrade() -> None:
     op.create_table('analyst_recommendations',
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('all_nse_stock_id', sa.Integer(), nullable=False),
-    sa.Column('snapshot_date', sa.DateTime(), nullable=False),
+    sa.Column('snapshot_date', sa.Date(), nullable=False),
     sa.Column('strong_buy', sa.Integer(), nullable=True),
     sa.Column('buy', sa.Integer(), nullable=True),
     sa.Column('hold', sa.Integer(), nullable=True),
@@ -139,7 +139,7 @@ def upgrade() -> None:
     op.create_table('stock_history',
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('stock_id', sa.Integer(), nullable=False),
-    sa.Column('snapshot_date', sa.DateTime(), nullable=False),
+    sa.Column('snapshot_date', sa.Date(), nullable=False),
     sa.Column('open', sa.Float(), nullable=True),
     sa.Column('high', sa.Float(), nullable=True),
     sa.Column('low', sa.Float(), nullable=True),
@@ -159,11 +159,11 @@ def upgrade() -> None:
     sa.Column('marketCap', sa.BigInteger(), nullable=True),
     sa.Column('trailingPE', sa.Float(), nullable=True),
     sa.Column('priceToBook', sa.Float(), nullable=True),
+    sa.Column('high52Week', sa.Float(), nullable=True),
+    sa.Column('low52Week', sa.Float(), nullable=True),
     sa.Column('fiftyDayAverage', sa.Float(), nullable=True),
     sa.Column('twoHundredDayAverage', sa.Float(), nullable=True),
     sa.Column('currentPrice', sa.Float(), nullable=True),
-    sa.Column('high52Week', sa.Float(), nullable=True),
-    sa.Column('low52Week', sa.Float(), nullable=True),
     sa.Column('mean', sa.Float(), nullable=True),
     sa.Column('median', sa.Float(), nullable=True),
     sa.ForeignKeyConstraint(['stock_id'], ['watched_stocks.id'], ondelete='CASCADE'),

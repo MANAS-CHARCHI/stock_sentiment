@@ -4,7 +4,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from db.database import SessionLocal
 from db.models import WatchedStock
-from api.helpers.watch_stocks_helper import sync_stock
+from schedule.scheduled_tasks.helper.watch_stocks_helper import sync_stock
 
 logger = logging.getLogger("yf_stock_update")
 
@@ -44,8 +44,8 @@ JOB = {
     "id": "yf_stock_sync",
     "func": run_yf_stock_sync,
     "trigger": CronTrigger(
-        hour=10,
-        minute=14,
+        hour=12,
+        minute=8,
         timezone="Asia/Kolkata"
     ),
     "misfire_grace_time": 3600,
